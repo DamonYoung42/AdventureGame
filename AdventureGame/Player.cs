@@ -15,7 +15,7 @@ namespace AdventureGame
         public Player(string name)
         {
             this.playerName = name;
-            this.taskList = new List<string> { "Steal a candy bar", "Hit 100 mph on a Harley", "Dive off the Hoan Bridge", "Skinny dip at Bradford Beach", "Hang from the Miller Park roof for 10 seconds" };
+            this.taskList = new List<string> { "Steal a candy bar", "Hit 100 mph on a Harley", "Take the polar bear plunge", "Skinny dip at Bradford Beach", "Hang from the Miller Park roof for 10 seconds", "Talk to a stranger at the mall", "Smack a stranger on the face", "Go to the grocery store in your pajamas"};
         }
 
 
@@ -53,7 +53,7 @@ namespace AdventureGame
 
         public void SetTasks()
         {
-            this.taskList = new List<string> { "Steal a candy bar", "Hit 100 mph on a Harley", "Dive off the Hoan Bridge", "Skinny dip at Bradford Beach", "Hang from the Miller Park roof for 10 seconds"};
+            this.taskList = new List<string> { "Steal a candy bar", "Hit 100 mph on a Harley", "Take the polar bear plunge", "Skinny dip at Bradford Beach", "Hang from the Miller Park roof for 10 seconds", "Talk to a stranger at the mall", "Smack a stranger on the face", "Go to the grocery store in your pajamas" };
         }
 
     }

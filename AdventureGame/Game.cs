@@ -24,10 +24,10 @@ namespace AdventureGame
         public void RunGame()
         {
 
-            Console.WriteLine("If you accept the challenge, you will attempt to complete 3 random tasks. If you complete these tasks, you win!");
+            Console.WriteLine("If you accept the challenge, you will attempt to complete 3 random tasks. Complete all three task and you win! But fail just one and you lose.");
             Console.WriteLine("Are you ready to start? (Y/N):");
 
-            if (Console.ReadLine() == "n")
+            if (Console.ReadLine().ToUpper() == "N")
             {
                 EndGame();
             }
@@ -44,7 +44,7 @@ namespace AdventureGame
         public string EnterPlayerName()
         {
             Console.WriteLine("Enter your player name:");
-            return Console.ReadLine();
+            return Console.ReadLine().ToUpper();
         }
 
         public void EndGame()
@@ -82,7 +82,7 @@ namespace AdventureGame
 
         public void PlayGame()
         {
-             Console.WriteLine("Welcome, {0}!", this.playerOne.getName());
+            Console.WriteLine("Welcome, {0}!", this.playerOne.getName());
 
             for (int i = 0; i < this.numberOfTasks; i++)
             {
@@ -97,7 +97,7 @@ namespace AdventureGame
         public bool RetryGame()
         {
             Console.WriteLine("Would you like to play again? Y/N:");
-            if (Console.ReadLine() == "y")
+            if (Console.ReadLine().ToUpper() == "Y")
             {
                 return true;
             }
